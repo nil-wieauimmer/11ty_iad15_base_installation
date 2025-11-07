@@ -1,7 +1,7 @@
 ---
 title: Weissraum
 image: /images/Weissraum-Landingpage-Work.jpg
-year: 2018
+year: 2020
 category: Plakatdesign
 ---
 
