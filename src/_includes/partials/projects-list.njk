@@ -1,0 +1,38 @@
+{# <link rel="stylesheet" href="/css/project-list.css">
+
+
+<p class="theme-debug level3">projects-list.njk</p>
+<section class="projects-section">
+    <div class="projects-grid">
+        {% for project in collections.projects %}
+        <article class="project-card">
+            <div class="project-content">
+                <h3 class="project-title">
+                    {{ project.data.title }}
+                </h3>
+                <img src="{{ project.data.image }}" alt="{{ project.data.title }} image" class="project-image">
+                <a href="{{ project.url }}" class="project-link">go to {{ project.data.title }}</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+<p class="theme-debug level3">/projects-list.njk</p> #}
+
+{% for project in collections.projects %}
+        <section class="Weissraum-Landingpage-Work">
+            <a href="{{ project.url }}">
+            <img src="{{ project.data.image}}" alt="Plakat Design Weissraum ZHDK Unterrichtsmaterial entstanden 2018">
+                </a>
+                <div class="Weissraum-Landingpage-Text">
+                        <span>{{ project.data.title }}</span>
+                        <span>{{ project.data.category}}</span>
+                        <span>{{ project.data.year}}</span>
+                </div>
+        </section>
+{% endfor %}
+
+{# title: Weissraum
+image: /images/Weissraum-Landingpage-Work.jpg
+year: 2018
+category: Plakatdesign #}

@@ -1,0 +1,28 @@
+---
+layout: base.njk
+---
+
+<p class="theme-debug level3">project-detail.njk</p>
+
+
+<img src="{{ image }}" alt="{{ title }} image">
+
+<p>{{ description }}</p>
+
+{% if year %}
+<p>year: {{ year }}</p>
+{% endif %}
+
+{% if company %}
+<p>company: {{ company }}</p>
+{% endif %}
+
+{% if category %}
+<p>category: {{ category }}</p>
+{% endif %}
+
+
+{{ content | safe }}
+
+
+<p class="theme-debug level3">/project-detail.njk</p>

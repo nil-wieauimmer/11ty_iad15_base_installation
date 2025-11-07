@@ -1,0 +1,206 @@
+html {
+	--accent-color: #28282B;
+	--font-color: #28282B;
+}
+@font-face {
+	font-family: 'PPEditorialNew-Regular';
+	src: url('/font/PPEditorialNew-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+  
+  }
+
+@font-face {
+	font-family: 'PPEditorialNew-Ultrabold';
+	src: url('/font/PPEditorialNew-Ultrabold.otf') format('opentype');
+	font-weight: 800;
+	font-style: normal;
+  
+  }
+body, html {
+	font-family: 'PPEditorialNew-Regular', serif;
+	font-weight: 400;
+	color: var(--font-color);
+	background-color:#CFCFCF;
+}
+
+body {
+	max-width: 100vw;
+}
+
+.title-wrap{
+  container-type: inline-size;
+  width: 100%;
+}
+
+.title-wrap h1{
+  color: var(--accent-color);
+  font-family: 'PPEditorialNew-Regular', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;  
+  white-space: nowrap;
+  margin: 0;
+  line-height: 1.05;
+  font-size: clamp(2rem, 9.6vw, 18rem);
+}
+
+@supports (font-size: 1cqw){
+  .title-wrap h1{
+    font-size: clamp(2rem, 10.6cqw, 18rem);
+  }
+}
+
+nav {
+  width: 100%;
+  padding: 48px 88px;
+  box-sizing: border-box;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'PPEditorialNew-Regular', serif;
+  color: #28282B;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+
+.Nil {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.Stadionbrache-Landingpage-Text, .Aufdenpunktbringen-Landingpage-Text, .Weissraum-Landingpage-Text, .Nil-About-Text  {
+	  display: flex;
+  	justify-content: space-between;
+	  text-transform: uppercase;	
+}
+
+.Aufdenpunktbringen-Landingpage-Work, .Weissraum-Landingpage-Work, .Stadionbrache-Landingpage-Work, .Nil-Portrait-About{
+	padding: 20px;
+}
+
+.Nil-CV-About {
+  width: 100%;
+  padding: 48px 88px;
+  box-sizing: border-box;
+}
+
+.Lauftext{
+	font-size: clamp(1.125rem, 2.5vw, 1.875rem);
+}
+
+.Stadionbrache-Detail-Text {
+  width: 100%;
+  padding: 48px 88px;
+  box-sizing: border-box;
+}
+
+.Lauftext-Detail-Stadionbrache{
+	font-size: clamp(1.125rem, 2.5vw, 1.875rem);
+}
+
+img {
+  width: 100%;         
+  height: auto;
+  display: block;
+}
+
+footer img {
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+
+
+a {
+	color: var(--accent-color);
+	font-size: clamp(1rem, 1.8vw, 1.5625rem);
+	text-transform: uppercase;
+	line-height: 112%;
+}
+
+.image-text-combo {
+	position: relative;
+	width: 100%;
+}
+
+footer{
+	display: flex;
+	padding: 100px 30px;
+	justify-content: space-between;
+	align-items: center;
+	align-self: stretch;
+}
+
+.Link-Socialmedia-Footer, .Link-Adresse-Footer, .Link-Recht-Footer{
+	font-weight: bold;
+	font-size:clamp(0.75rem, 2vw, 1.25rem);
+	text-transform: uppercase;
+	line-height: 112%;
+	white-space: nowrap;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-two-columns {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	justify-content: space-between;
+}
+
+.flex-column {
+	min-width: 200px;
+	max-width: 45%;
+}
+
+
+@media (max-width: 600px) {
+  footer {
+    align-items: flex-start;
+    gap: 10px;
+    padding: 40px 10px;
+  }
+
+
+  nav{  
+    width: 100%;
+    padding: 28px 40px;
+    box-sizing: border-box;
+
+  }
+
+  .Link-Socialmedia-Footer,.Link-Adresse-Footer,.Link-Recht-Footer {
+    font-size: clamp(0.6875rem, 1.8vw, 0.8rem);
+    line-height: 1.2;
+  }
+
+  span{
+     font-size: clamp(0.6875rem, 1.8vw, 0.8rem);	
+  }
+
+  a{
+    font-size: clamp(0.6875rem, 1.8vw, 0.8rem);	
+  }
+
+  footer img{
+    width:20px;
+    height: 20px;
+}
+
+}

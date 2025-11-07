@@ -1,0 +1,13 @@
+nav {
+    background-color: var(--header-background-color);
+    padding: 1em 40px;
+    margin-top: 2em;
+    border-radius: 1em;
+}
+nav ul {
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
